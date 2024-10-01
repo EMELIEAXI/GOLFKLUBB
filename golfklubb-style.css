@@ -125,3 +125,22 @@ p {
     margin: 20px;
     background-image: linear-gradient(to right, rgb(255,255,255,1 ), rgb(255, 255, 255,0));
   }
+#bakgrundbokning {
+    border-radius: 50%;
+    width: 500px;   
+    margin: 100px;
+    display: flex;
+    float: right;
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+
+  #bokningssida {
+    background-color: rgb(154, 141, 45);
+  }
