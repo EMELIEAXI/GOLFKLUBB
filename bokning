@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUC Golfklubb</title>
+    <link rel="stylesheet" href="golfklubb-style.css">
+</head>
+<body>
+    <div id="bokningssida">
+    <section class="top-nav">
+       
+        <ul class="menu">
+            <li><a href="golfklubb.html">Hem</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+            <li><a href="bokning.html">Bokning</a></li>
+            <li><a href="#">Medlem</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+     </section>
+
+    <div class="background-div-bokning">
+        <img src="golf-787826_1280.jpg" alt="man golfar i solnedgång" id="bakgrundbokning">
+        <div class="text-container"> 
+        </div>
+    </div>
+</div>
+</body>
+</html>  
