@@ -156,6 +156,32 @@ footer {
     opacity: 0.8;
 }
 
+/* Footer-Upphövsrätt*/
+hr.line {
+    width: 82%;
+    border: 0.0001em ridge rgb(85, 83, 83);
+}
+
+.footer-container-legal {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial;
+    font-size: 0.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 60%;
+}
+
+.footer-container-legal a {
+    color: rgb(248, 245, 245);
+    text-decoration: none;
+}
+
+
+.footer-cookies a:hover {
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+}    
 
 @media (max-width: 768px) {
     .footer-container {
