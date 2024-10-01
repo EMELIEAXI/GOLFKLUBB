@@ -99,3 +99,29 @@ p {
 .menu li a:hover {
     color: gray; 
 }
+
+.background-div {
+    background-image: url("golf-2217600_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .text-container {
+    height: 400px;
+    width: 1000px;
+    /* background: white; */
+    color: black;   
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-image: linear-gradient(to right, rgb(255,255,255,1 ), rgb(255, 255, 255,0));
+  }
