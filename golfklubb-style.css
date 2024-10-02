@@ -55,6 +55,7 @@ a:visited {
 a:active {
     text-decoration: none;
     color: rgb(191, 191, 191);
+}
 p {
     font-size: 1.5em;
 }
@@ -106,18 +107,73 @@ footer {
     text-align: center;
 }
 
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+.newsletter-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.footer-logo img {
-    width: 800px;
+.newsletter-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.newsletter-container p {
+    font-size: 16px;
+    color: #666;
     margin-bottom: 20px;
 }
+
+.newsletter-container label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.newsletter-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter-container button {
+    background-color: #006400;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter-container button:hover {
+    background-color: #004d00;
+}
+
+footer {
+    background-color:rgba(9, 20, 46, 0.7);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 100px; 
+}
+.footer-logo img {
+    width: 500px;
+    margin-bottom: 20px;
+}
+
 
 .footer-hours, .footer-links, .footer-social {
     max-width: 200px;
@@ -126,7 +182,7 @@ footer {
 
 .footer-hours h3, .footer-links h3, .footer-social h3 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .footer-hours p, .footer-links a {
@@ -155,6 +211,9 @@ footer {
 .footer-social a:hover img {
     opacity: 0.8;
 }
+
+    
+
 
 /* Footer-Upphövsrätt*/
 hr.line {
@@ -192,4 +251,57 @@ hr.line {
     .footer-logo img, .footer-social img {
         margin-bottom: 20px;
     }
+
+/* Emilias CSS kod för nyhetssidan */
+
+button {
+    background-color: #004600;
+    color: white;
+    font-size: x-large;
+    margin: 30px;
+    padding: 10px;
+    border-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 7px #adb2b9, -5px -5px 7px white;
+    
 }
+
+button:hover {
+    box-shadow: none;
+    cursor: pointer;
+    
+}
+
+.newssite {
+    margin-left: 60px;
+    padding: 2em;
+}
+
+.image-links {
+    text-align: center;
+}
+
+figure {
+
+    margin:25px;
+    padding: 25px;
+    display:inline-block;
+}
+
+figcaption {
+    position: relative;
+    font-weight:bold;
+    margin-bottom: 6px;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px #7b7d80, -5px -5px 7px white;
+    
+}
+
+img:hover {
+    box-shadow: none;
+}
+
+/*Här slutar Emilias kod för nyhetssidan*/
