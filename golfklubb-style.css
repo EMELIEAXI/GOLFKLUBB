@@ -305,3 +305,94 @@ img:hover {
 }
 
 /*Här slutar Emilias kod för nyhetssidan*/
+
+    /* Emelies css för designen på om oss, bokning, medlem */
+
+.background-div {
+    background-image: url("golf-2217600_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .text-container {
+    height: 400px;
+    width: 1000px;
+    color: black;   
+    font-size: 15px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-image: linear-gradient(to right, rgb(255,255,255,1 ), rgb(255, 255, 255,0));
+  }
+
+#bild-bli-medlem {
+    width: 300px;
+    height: 300px;
+    box-shadow: none;
+    margin: 350px 200px;
+    display: flex;
+    float: right;
+    display: inline;
+    animation: fadein0 2s; 
+}
+@keyframes fadein0 {
+    from {
+        margin: 100px 200px;
+    }
+    to {
+        margin: 350px 200px;
+    }
+}
+
+.text-medlem {
+   text-align: left;
+    float: left;
+    margin: 50px 50px;
+    display: inline-block;
+}
+
+#bild-bli-medlem2 {
+    width: 300px;
+    height: 300px;
+    box-shadow: none;
+    margin: 100px 200px;
+    display: flex;
+    float: right;
+    display: inline;
+    animation: fadein1 2s; 
+}
+@keyframes fadein1 {
+    from {
+        margin: 350px 200px;
+    }
+    to {
+        margin: 100px 200px;
+    }
+}
+
+#bakgrundbokning {
+    border-radius: 50%;
+    width: 500px;   
+    margin: 100px;
+    display: flex;
+    float: right;
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+/* Slut Emelies css kod för design*/
