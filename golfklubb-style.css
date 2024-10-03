@@ -294,13 +294,13 @@ figcaption {
     margin-bottom: 6px;
 }
 
-img {
+.img-links, img {
     border-radius: 10px;
     box-shadow: 5px 5px 7px #7b7d80, -5px -5px 7px white;
     
 }
 
-img:hover {
+.img-links, img:hover {
     box-shadow: none;
 }
 
