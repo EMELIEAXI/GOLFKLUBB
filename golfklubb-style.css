@@ -254,54 +254,88 @@ hr.line {
 
 /* Emilias CSS kod för nyhetssidan */
 
-button {
-    background-color: #004600;
+.section-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.member-button {
+  margin: 0;
+}
+
+.member-button .button {
+    background-color:#006400;
     color: white;
-    font-size: x-large;
-    margin: 30px;
-    padding: 10px;
-    border-color: white;
-    border-radius: 8px;
+    font-size: 1em;
+    text-decoration: none;
+    border:none;
+    border-radius: 4px;
     box-shadow: 5px 5px 7px #adb2b9, -5px -5px 7px white;
-    
-}
-
-button:hover {
-    box-shadow: none;
     cursor: pointer;
-    
-}
-
-.newssite {
-    margin-left: 60px;
-    padding: 2em;
-}
-
-.image-links {
+    width: 100%;
+    padding: 0.5em;
+    display: inline-block;
     text-align: center;
 }
 
-figure {
-
-    margin:25px;
-    padding: 25px;
-    display:inline-block;
+.member-button .button:hover {
+  background-color: #004d00;
+  box-shadow: none;
 }
 
-figcaption {
-    position: relative;
+.newssite {
+    margin-left: 10%;
+    padding: 2em;
+}
+
+.newssite a {
+  color: black;
+}
+
+.image-links {
+  width: 100%;
+}
+
+.picture-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.picture-boxes figure {
+    margin: 3em;
+    flex: 1 1 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction:column;
+    cursor: pointer;
+}
+
+.picture-boxes figcaption {
     font-weight:bold;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
-.img-links, img {
+.picture-boxes img {
     border-radius: 10px;
     box-shadow: 5px 5px 7px #7b7d80, -5px -5px 7px white;
-    
+    width: 350px;
+    height: 250px;
+    object-fit:cover;
 }
 
-.img-links, img:hover {
+.picture-boxes img:hover {
     box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .picture-boxes figure {
+    flex: 1 1 100%;
+  }
 }
 
 /*Här slutar Emilias kod för nyhetssidan*/
