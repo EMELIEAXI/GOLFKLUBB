@@ -55,6 +55,7 @@ a:visited {
 a:active {
     text-decoration: none;
     color: rgb(191, 191, 191);
+}
 p {
     font-size: 1.5em;
 }
@@ -155,21 +156,24 @@ footer {
     background-color: #004d00;
 }
 
+footer {
+    background-color:rgba(9, 20, 46, 0.7);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
 
-
-    
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
+    align-items: flex-start; 
+    gap: 100px; 
 }
-
 .footer-logo img {
-    width: 800px;
+    width: 500px;
     margin-bottom: 20px;
 }
+
 
 .footer-hours, .footer-links, .footer-social {
     max-width: 200px;
@@ -178,7 +182,7 @@ footer {
 
 .footer-hours h3, .footer-links h3, .footer-social h3 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .footer-hours p, .footer-links a {
@@ -208,6 +212,35 @@ footer {
     opacity: 0.8;
 }
 
+    
+
+
+/* Footer-Upphövsrätt*/
+hr.line {
+    width: 82%;
+    border: 0.0001em ridge rgb(85, 83, 83);
+}
+
+.footer-container-legal {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial;
+    font-size: 0.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 60%;
+}
+
+.footer-container-legal a {
+    color: rgb(248, 245, 245);
+    text-decoration: none;
+}
+
+
+.footer-cookies a:hover {
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+}    
 
 @media (max-width: 768px) {
     .footer-container {
@@ -219,3 +252,147 @@ footer {
         margin-bottom: 20px;
     }
 }
+/* Emilias CSS kod för nyhetssidan */
+
+button {
+    background-color: #004600;
+    color: white;
+    font-size: x-large;
+    margin: 30px;
+    padding: 10px;
+    border-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 7px #adb2b9, -5px -5px 7px white;
+    
+}
+
+button:hover {
+    box-shadow: none;
+    cursor: pointer;
+    
+}
+
+.newssite {
+    margin-left: 60px;
+    padding: 2em;
+}
+
+.image-links {
+    text-align: center;
+}
+
+figure {
+
+    margin:25px;
+    padding: 25px;
+    display:inline-block;
+}
+
+figcaption {
+    position: relative;
+    font-weight:bold;
+    margin-bottom: 6px;
+}
+
+.img-links, img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px #7b7d80, -5px -5px 7px white;
+    
+}
+
+.img-links, img:hover {
+    box-shadow: none;
+}
+
+/*Här slutar Emilias kod för nyhetssidan*/
+
+    /* Emelies css för designen på om oss, bokning, medlem */
+
+.background-div {
+    background-image: url("golf-2217600_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .text-container {
+    height: 400px;
+    width: 1000px;
+    color: black;   
+    font-size: 15px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-image: linear-gradient(to right, rgb(255,255,255,1 ), rgb(255, 255, 255,0));
+  }
+
+#bild-bli-medlem {
+    width: 300px;
+    height: 300px;
+    box-shadow: none;
+    margin: 350px 200px;
+    display: flex;
+    float: right;
+    display: inline;
+    animation: fadein0 2s; 
+}
+@keyframes fadein0 {
+    from {
+        margin: 100px 200px;
+    }
+    to {
+        margin: 350px 200px;
+    }
+}
+
+.text-medlem {
+   text-align: left;
+    float: left;
+    margin: 50px 50px;
+    display: inline-block;
+}
+
+#bild-bli-medlem2 {
+    width: 300px;
+    height: 300px;
+    box-shadow: none;
+    margin: 100px 200px;
+    display: flex;
+    float: right;
+    display: inline;
+    animation: fadein1 2s; 
+}
+@keyframes fadein1 {
+    from {
+        margin: 350px 200px;
+    }
+    to {
+        margin: 100px 200px;
+    }
+}
+
+#bakgrundbokning {
+    border-radius: 50%;
+    width: 500px;   
+    margin: 100px;
+    display: flex;
+    float: right;
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+/* Slut Emelies css kod för design*/
