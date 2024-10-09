@@ -1,0 +1,248 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.top-nav {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  position: fixed;
+  background-color: rgba(9, 20, 46, 0.7);
+  color: white;
+  padding: 1em;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 3em;
+}
+
+.menu li a {
+  color: rgb(248, 245, 245);
+  text-decoration: none;
+  padding: 0.5em;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+}
+
+.menu li a:hover {
+  color: gray;
+}
+
+.header-image {
+  width: 100%; /* Gör så att bilden sträcker sig över hela bredden */
+}
+
+.header-image img {
+  width: 100%; /* Gör så att bilden anpassas till containerbredden */
+  height: auto; /* Bevarar bildens aspektförhållande */
+  max-height: 300px; /* Sätter en maxhöjd på bilden (justera värdet efter behov) */
+  object-fit: cover; /* Se till att bilden fyller området utan att bli förvrängd */
+}
+
+
+/* Flexbox Layout for Contact and Map Information */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Ensure top alignment of sections */
+  gap: 40px; /* Add some space between columns */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  flex: 1; /* Make contact info take more space */
+  padding-right: 20px; /* Add some padding for spacing */
+}
+
+.map-info {
+  flex: 1;
+}
+
+/* Adjust the map container width */
+.map-container {
+  margin: 20px 0;
+  max-width: 100%; /* Ensure responsiveness */
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column; /* Stack columns vertically */
+      gap: 20px;
+  }
+}
+ 
+.contact-form {
+  font-family:'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+ 
+.contact-form .message-box {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-items:center;
+  align-items: center;
+  padding: 3em;
+  text-align: center;
+  width: 500px;
+  height: auto;
+  border-radius: 14px;
+}
+ 
+ 
+.contact-form textarea {
+  border-radius: 6px;
+  border: 2px solid rgb(215, 214, 214);
+  width: 100%;
+}
+ 
+.contact-form .submit-button {
+  background-color: #006400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+ 
+.contact-form .submit-button:hover {
+  background-color:#004d00;
+}
+ 
+
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer {
+  background-color:rgba(9, 20, 46, 0.7);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+.footer-logo img {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+
+.footer-hours, .footer-links, .footer-social {
+  max-width: 200px;
+  text-align: left;
+}
+
+.footer-hours h3, .footer-links h3, .footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.footer-hours p, .footer-links a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+.footer-social img {
+  width: 40px;
+}
+
+.footer-social a:hover img {
+  opacity: 0.8;
+}
+
+  
+
+
+/* Footer-Upphövsrätt*/
+hr.line {
+  width: 82%;
+  border: 0.0001em ridge rgb(85, 83, 83);
+}
+
+.footer-container-legal {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial;
+  font-size: 0.5em;
+  justify-content: center;
+  align-items: center;
+  gap: 60%;
+}
+
+.footer-container-legal a {
+  color: rgb(248, 245, 245);
+  text-decoration: none;
+}
+
+
+.footer-cookies a:hover {
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+}    
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-logo img, .footer-social img {
+      margin-bottom: 20px;
+  }
+}
