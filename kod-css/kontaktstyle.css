@@ -3,11 +3,14 @@ body, html {
   padding: 0;
   height: 100%;
 }
+
+/*Adinas kod*/
+
 .top-nav {
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1em;
   display: flex;
-  align-items: center;
+  align-items: center; 
   justify-content: space-between;
   z-index: 1000;
   position: fixed;
@@ -19,7 +22,7 @@ body, html {
 
 .menu {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -28,21 +31,201 @@ body, html {
 }
 
 .menu li {
-  margin: 0 3em;
+  margin: 0 3em; 
+  position: relative;
+}
+
+.menu > li:hover > a::after {
+  display: inline;
+}
+
+/* Gemensam stil för alla dropdown-menyer */
+.dropdown-spela,
+.dropdown,
+.dropdown-medlem {
+  display: none; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(9, 20, 46, 0.7);
+  list-style-type: none;
+  padding: 1px 0;
+  margin: 0;
+  width: 200px; 
+}
+
+/* Länkar i dropdown-menyer */
+.dropdown-spela li,
+.dropdown li,
+.dropdown-medlem li {
+  margin-bottom: 5px; /* Avstånd mellan länkar */
+  margin-top: 5px;
+  text-align: left;
+}
+
+.dropdown-spela li a,
+.dropdown li a,
+.dropdown-medlem li a {
+  padding: 0; 
+  color: white;
+  text-decoration: none;
+  display: block; 
+  text-align: left; 
+}
+
+
+.dropdown-medlem li a {
+  padding: 0px 0; 
+}
+
+.dropdown-spela li a::after,
+.dropdown li a::after,
+.dropdown-medlem li a::after {
+  content: none;
+}
+
+.menu li:hover .dropdown-spela,
+.menu li:hover .dropdown,
+.menu li:hover .dropdown-medlem {
+  display: block; 
+  color: rgb(153, 147, 147);
+}
+/* Menyinställningar */
+.menu a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center; 
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  border: solid transparent;
+  border-width: 5px 5px 0 5px;
+  border-top-color: white;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  display: none;
 }
 
 .menu li a {
+  display: block;
   color: rgb(248, 245, 245);
   text-decoration: none;
   padding: 0.5em;
   transition: background-color 0.3s;
   cursor: pointer;
+}
 
+.menu li:hover > a::after {
+  display: inline;
 }
 
 .menu li a:hover {
-  color: gray;
+  color: grey;
 }
+
+.menu li:hover > .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(9, 20, 46, 0.7);
+  list-style-type: none;
+  padding: 10px 0 0;
+  margin: 0;
+  width: 200px;
+}
+
+.dropdown li {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.dropdown li a {
+  padding: 10px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(9, 20, 46, 0.7);
+  list-style-type: none;
+  padding: 10px 0 0;
+  margin: 0;
+  width: 200px;
+}
+
+.dropdown li {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.dropdown li a {
+  padding: 10px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  background-color: rgba(9, 20, 46, 0.7);
+}
+
+/* Medlems dropdown */
+.dropdown-medlem {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(9, 20, 46, 0.7);
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 200px;
+}
+
+.dropdown-medlem li {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.dropdown-medlem li a {
+  padding: 10px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-medlem li a:hover {
+  background-color: rgba(9, 20, 46, 0.7);
+}
+
+
+.menu li:hover .dropdown-medlem {
+  display: block;
+}
+
+/* Spela dropdown */
+.menu li:hover .dropdown-spela {
+  display: block;
+}
+
+/*Här slutar Adinas kod*/
+
 
 .header-image {
   width: 100%; /* Gör så att bilden sträcker sig över hela bredden */
