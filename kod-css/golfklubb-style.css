@@ -289,6 +289,71 @@ footer {
     text-align: center;
 }
 
+/*Start of Geneskod: Tävlingar och Evenemang*/
+.tav {
+    text-align: center;
+    font-family: Arial;
+    font-size: 1.5em;
+  }
+
+.tavlingar {
+    position: relative;
+    height: 35%;
+    overflow: hidden;
+}
+
+#tavvideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.callout {
+    font-size: 2rem;
+    color: rgb(255, 226, 7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 9);
+    display: block;
+    float: right;
+    align-items: center;
+    flex-direction:row;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    width: 52%;
+    margin-top: 1.5%;
+  }
+
+  .goldencup, .caption1 {
+    position: absolute;
+    display:block;
+    float:right;
+    align-items: center;
+    flex-direction:row;
+    top: 48%;
+    margin-left: 55%;
+    z-index: 1;
+    clear: both;
+    color: rgb(3, 54, 3);
+}
+
+.kalender, .caption2 {
+    position: absolute;
+    display:block;
+    float:right;
+    align-items: center;
+    flex-direction:row;
+    top: 48%;
+    margin-left: 67%;
+    z-index: 1;
+    clear: both;
+    color: rgb(3, 54, 3);
+}
+/*End of Geneskod: Tävlingar och Evenemang*/
+
+
 .newsletter-container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -419,7 +484,7 @@ hr.line {
 }
 
 
-.footer-cookies a:hover {
+.footer-container-legal a:hover {
     color: rgb(128, 128, 128);
     text-decoration: none;
 }    
