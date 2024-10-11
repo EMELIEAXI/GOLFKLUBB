@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    }
+
+
+    .top-nav {
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.1em;
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+        z-index: 1000;
+        position: fixed;
+        background-color: rgba(9, 20, 46, 0.7);
+        color: white;
+        padding: 1em;
+        width: 100%;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .menu li {
+        margin: 0 3em; 
+        position: relative;
+    }
+    
+    .menu > li:hover > a::after {
+        display: inline;
+    }
+    
+    /* Gemensam stil för alla dropdown-menyer */
+    .dropdown-spela,
+    .dropdown,
+    .dropdown-medlem {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(9, 20, 46, 0.7);
+        list-style-type: none;
+        padding: 1px 0;
+        margin: 0;
+        width: 200px; 
+    }
+    
+    /* Länkar i dropdown-menyer */
+    .dropdown-spela li,
+    .dropdown li,
+    .dropdown-medlem li {
+        margin-bottom: 5px; /* Avstånd mellan länkar */
+        margin-top: 5px;
+        text-align: left;
+    }
+    
+    .dropdown-spela li a,
+    .dropdown li a,
+    .dropdown-medlem li a {
+        padding: 0; 
+        color: white;
+        text-decoration: none;
+        display: block; 
+        text-align: left; 
+    }
+    
+    
+    .dropdown-medlem li a {
+        padding: 0px 0; 
+    }
+    
+    .dropdown-spela li a::after,
+    .dropdown li a::after,
+    .dropdown-medlem li a::after {
+        content: none;
+    }
+    
+    .menu li:hover .dropdown-spela,
+    .menu li:hover .dropdown,
+    .menu li:hover .dropdown-medlem {
+        display: block; 
+        color: rgb(153, 147, 147);
+    }
+    /* Menyinställningar */
+    .menu a {
+        display: block;
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center; 
+        position: relative;
+    }
+    
+    .menu a::after {
+        content: "";
+        border: solid transparent;
+        border-width: 5px 5px 0 5px;
+        border-top-color: white;
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        transform: translateY(-50%);
+        display: none;
+    }
+    
+    .menu li a {
+        display: block;
+        color: rgb(248, 245, 245);
+        text-decoration: none;
+        padding: 0.5em;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+    
+    .menu li:hover > a::after {
+        display: inline;
+    }
+    
+    .menu li a:hover {
+        color: grey;
+    }
+    
+    .menu li:hover > .dropdown {
+        display: block;
+    }
+    
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(9, 20, 46, 0.7);
+        list-style-type: none;
+        padding: 10px 0 0;
+        margin: 0;
+        width: 200px;
+    }
+    
+    .dropdown li {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    
+    .dropdown li a {
+        padding: 10px;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(9, 20, 46, 0.7);
+        list-style-type: none;
+        padding: 10px 0 0;
+        margin: 0;
+        width: 200px;
+    }
+    
+    .dropdown li {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    
+    .dropdown li a {
+        padding: 10px;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .dropdown li a:hover {
+        background-color: rgba(9, 20, 46, 0.7);
+    }
+    
+    /* Medlems dropdown */
+    .dropdown-medlem {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(9, 20, 46, 0.7);
+        list-style-type: none;
+        padding: 10px 0;
+        margin: 0;
+        width: 200px;
+    }
+    
+    .dropdown-medlem li {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    
+    .dropdown-medlem li a {
+        padding: 10px;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .dropdown-medlem li a:hover {
+        background-color: rgba(9, 20, 46, 0.7);
+    }
+    
+    
+    .menu li:hover .dropdown-medlem {
+        display: block;
+    }
+    
+    /* Spela dropdown */
+    .menu li:hover .dropdown-spela {
+        display: block;
+    }
+    
+
+    footer {
+        background-color: rgba(9, 20, 46, 0.7);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+    }
+     
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+     
+    .footer-logo img {
+        width: 150px;
+    }
+     
+    .footer-hours, .footer-links, .footer-social {
+        max-width: 200px;
+        text-align: left;
+    }
+     
+    .footer-hours h3, .footer-links h3, .footer-social h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+     
+    .footer-hours p, .footer-links a {
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+     
+    .footer-links a {
+        display: block;
+        margin-bottom: 10px;
+    }
+     
+    .footer-links a:hover {
+        color: #ccc;
+    }
+     
+    .footer-social a {
+        margin-right: 10px;
+    }
+     
+    .footer-social img {
+        width: 30px;
+    }
+     
+    .footer-social a:hover img {
+        opacity: 0.8;
+    }
+     
+    hr.line {
+        width: 90%;
+        border: 0.5px solid #555;
+        margin: 20px auto;
+    }
+     
+    .footer-container-legal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        font-size: 0.85rem;
+        margin-top: 20px;
+    }
+     
+    .footer-container-legal a {
+        color: rgb(248, 245, 245);
+        text-decoration: none;
+    }
+     
+    .footer-container-legal a:hover {
+        color: rgb(128, 128, 128);
+    }
+     
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+     
+        .footer-logo img, .footer-social img {
+            margin-bottom: 20px;
+        }
+     
+        .footer-hours, .footer-links, .footer-social {
+            text-align: center;
+            max-width: 100%;
+        }
+     
+        hr.line {
+            width: 100%;
+        }
+    }
+
+.background-div {
+    background-image: url("golf-2217600_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: (calc100vh-100px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    flex-direction: column;
+    flex: 1;
+  } 
+
+
+/* Text rutan på om oss*/
+  .text-container {
+    height: 70%;
+    width: 90%;
+    color: black;   
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: 3%;
+    background-image: linear-gradient(to right, rgb(255,255,255,1 ), rgb(255, 255, 255,0));
+    border-radius: 20px;
+  }
+
+.omoss {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.meny-höger-sida-omoss {
+    font-family: "Josefin Sans";
+    line-height: 50px;
+    margin-top: 10%;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    padding-left: 0;
+}
+
+.meny-höger-sida-omoss .link-omoss {
+    display: inline;
+    padding: 0 30px;
+    
+}
+
+
+.link-omoss a{
+    color: rgb(9, 20, 46);
+    justify-content: space-around;
+}
+.link-omoss a:visited {
+    color: rgb(9, 20, 46);
+}
+
+/* .meny-höger-sida-omoss  */
+
+
+.link-omoss a:hover {
+    background-color: rgba(9, 20, 46, 0.7);
+    color: #fff;
+    border-radius: 3%;
+    padding: 10px 10px;
+    margin: 2%;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+    padding: 0;
+    }
+    to {
+    padding: 10px 10px;
+    }
+}
+.helasidan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    /* flex-wrap: wrap; */
+}
+.historia {
+    display: block;
+    border: solid 1px #7b7d80;
+    padding: 2px;
+    margin:auto;
+    margin-top: 3%;
+    width: 50%;
+        text-align: center;
+        background-color: rgb(128, 128, 128, 0.3);
+        padding: 5%;
+}
+
+.anchor-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    font-family: "Josefin Sans";
+
+
+}
+.anchor-links li{
+    display: inline;
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+
+.anchor-links li a{
+    color: #000;
+}
+
+.faciliteter {
+    padding: 20px;
+    overflow-y: auto;
+    align-items: center;
+    height: 100vh;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+.bild-fac {
+    max-width: 50%;
+}
+.facilitet1 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 25vh;
+    margin: 5%;
+}
+.facilitet1 .text1 {
+    margin: 0 0 0 30px;
+    background-color: rgba(85, 85, 85, 0.3);
+    border: dotted black;
+    padding: 0.5rem;
+}
+
+.facilitet2 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    height: 25vh;
+    margin: 5%;
+}
+
+.facilitet2 .text2 {
+    margin: 0 30px 0 0;
+    background-color: rgba(85, 85, 85, 0.3);
+    border: dotted black;
+    padding: 0.5rem;
+}
+.sidorubrik {
+    font-family: "Josefin Sans";
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    float: right;
+    margin: 15% 5%;
+    border: solid 1px black;
+    padding: 1rem;
+}
+
+@media (max-width: 1235px) {
+.background-div {
+        align-content: center;
+    }
+.sidorubrik {
+    margin: 10% 20% 10% 10%;
+    flex-direction: column;
+    float: left;
+}
+.facilitet1, .facilitet2 {
+    align-content: center;
+}
+}
+@media screen and (max-width: 1000px) {
+    .facilitet1, .facilitet2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    border-radius: 1px solid black;
+    }
+    .text1, .text2 {
+        width: 100%;
+     
+    }
+}
+
+
+    
