@@ -62,6 +62,7 @@ p {
 
 /*Adinas kod*/
 
+
 .top-nav {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.1em;
@@ -91,8 +92,25 @@ p {
     position: relative;
 }
 
-.menu > li:hover > a::after {
-    display: inline;
+.menu li a::after {
+    content: none; 
+}
+
+
+.menu li:has(ul) > a::after {
+    content: ""; 
+    border: solid transparent;
+    border-width: 5px 5px 0 5px;
+    border-top-color: white;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.menu li:hover:has(ul) > a::after {
+    display: inline; 
 }
 
 /* Gemensam stil för alla dropdown-menyer */
@@ -114,7 +132,7 @@ p {
 .dropdown-spela li,
 .dropdown li,
 .dropdown-medlem li {
-    margin-bottom: 5px; /* Avstånd mellan länkar */
+    margin-bottom: 5px; 
     margin-top: 5px;
     text-align: left;
 }
@@ -279,7 +297,6 @@ p {
 .menu li:hover .dropdown-spela {
     display: block;
 }
-
 /*Här slutar Adinas kod*/
 
 footer {
