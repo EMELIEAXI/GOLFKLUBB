@@ -723,3 +723,118 @@ hr.line {
 
 /* Slut Emelies css kod för design*/
 
+/*ADINA - Visa hamburgermenyn och dölj den horisontella menyn i mobilvy */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .top-nav .menu {
+        display: none;
+    }
+
+    .hamburger-icon {
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px;
+        color: white;
+        background-color: transparent; 
+        border: none;
+        display: block;
+        transition: background-color 0.3s ease; 
+    }
+
+    .hamburger-dropdown {
+        width: 50vw; 
+    }
+
+    .hamburger-dropdown li {
+        position: relative;
+    }
+
+    .hamburger-dropdown li a {
+        width: 100%;
+    }
+
+      /*Submeny*/
+
+    .hamburger-dropdown .dropdown li,
+    .dropdown-spela li,
+    .dropdown-medlem li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown-spela li a,
+    .dropdown li a,
+    .dropdown-medlem li a {
+        padding: 10px 15px; 
+        color: white;
+        background-color: rgba(9, 20, 46, 0.9);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .dropdown-spela li a:hover,
+    .dropdown li a:hover,
+    .dropdown-medlem li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+
+    .hamburger-dropdown .dropdown,
+    .dropdown-spela,
+    .dropdown-medlem {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%; 
+        background-color: rgba(9, 20, 46, 0.9); 
+        padding: 0; 
+        border: none;
+        list-style: none;
+        width: 200px; 
+    }
+
+   
+    .hamburger-dropdown li:hover > .dropdown,
+    .hamburger-dropdown li:hover > .dropdown-spela,
+    .hamburger-dropdown li:hover > .dropdown-medlem {
+        display: block;
+    }
+
+    
+    .hamburger-dropdown li a,
+    .hamburger-dropdown .dropdown li a,
+    .dropdown-spela li a,
+    .dropdown-medlem li a {
+        display: block;
+        padding: 10px 15px;
+        color: white;
+        background-color: rgba(9, 20, 46, 0.9); 
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .hamburger-dropdown li a:hover,
+    .hamburger-dropdown .dropdown li a:hover,
+    .dropdown-spela li a:hover,
+    .dropdown-medlem li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+
+.menu-toggle:checked + .hamburger-icon {
+    background-color: rgba(9, 20, 46, 0.7);
+}
+.menu-toggle:checked + .hamburger-icon + .hamburger-dropdown {
+    display: block;
+}
+
+}
+
+/*ADINA slut*/
