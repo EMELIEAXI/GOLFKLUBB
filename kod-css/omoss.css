@@ -334,7 +334,7 @@ body {
         }
     }
 
-.background-div {
+.background-div-omoss {
     background-image: url(/bilder/golf-2217600_1280.jpg);
     background-position: center;
     background-size: cover;
@@ -350,7 +350,7 @@ body {
 
 
 /* Text rutan på om oss*/
-  .text-container {
+  .text-container-omoss {
     height: 90%;
     width: 90%;
     color: black;   
