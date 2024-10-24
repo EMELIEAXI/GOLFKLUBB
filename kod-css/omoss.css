@@ -335,7 +335,7 @@ body {
     }
 
 .background-div {
-    background-image: url("golf-2217600_1280.jpg");
+    background-image: url(/bilder/golf-2217600_1280.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -351,7 +351,7 @@ body {
 
 /* Text rutan på om oss*/
   .text-container {
-    height: 70%;
+    height: 90%;
     width: 90%;
     color: black;   
     font-size: 15px;
@@ -360,10 +360,11 @@ body {
     margin: 3%;
     background-image: linear-gradient(to right, rgb(255,255,255,1 ), rgb(255, 255, 255,0));
     border-radius: 20px;
+    flex-wrap: wrap;
   }
 
 .omoss {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
     font-size: medium;
     letter-spacing: 2px;
     margin: 10px;
@@ -414,7 +415,7 @@ body {
     }
     to {
     padding: 10px 10px;
-    }
+    } 
 }
 .helasidan {
     display: flex;
@@ -455,20 +456,21 @@ body {
 
 .faciliteter {
     padding: 20px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: 2%;
     margin-bottom: 0;
 }
 .bild-fac {
-    max-width: 50%;
+    max-width: 25%;
 }
+
 .facilitet1 {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    height: 25vh;
+    width: 70%;
+    max-height: 40vh;
     margin: 5%;
 }
 .facilitet1 .text1 {
@@ -481,8 +483,8 @@ body {
 .facilitet2 {
     display: flex;
     flex-direction: row-reverse;
-    width: 50%;
-    height: 25vh;
+    width: 70%;
+    height: auto;
     margin: 5%;
 }
 
@@ -496,37 +498,85 @@ body {
     font-family: "Josefin Sans";
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    float: right;
-    margin: 15% 5%;
+    margin: 15% 50% 5% 5%;
     border: solid 1px black;
     padding: 1rem;
+
+}
+/* UNDERMENYN OMOSS------------------------*/
+
+@media screen and (max-width:768px) {
+
+        .meny-höger-sida-omoss {
+            font-family: "Josefin Sans";
+            line-height: 25px;
+            margin-top: 40%;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            color:#fff;
+            list-style: none;
+            align-items: start;
+        }
+        
+
+        .link-omoss a{
+            color: rgb(9, 20, 46);
+        }
+
+        .link-omoss a:visited {
+            color: rgb(9, 20, 46);
+        }
+        
+        /* .meny-höger-sida-omoss  */ 
+        .link-omoss a:hover {
+            margin: 2%;
+            text-decoration: none;
+}
 }
 
-@media (max-width: 1235px) {
-.background-div {
-        align-content: center;
-    }
-.sidorubrik {
-    margin: 10% 20% 10% 10%;
-    flex-direction: column;
-    float: left;
-}
-.facilitet1, .facilitet2 {
-    align-content: center;
-}
-}
-@media screen and (max-width: 1000px) {
-    .facilitet1, .facilitet2 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5%;
-    border-radius: 1px solid black;
-    }
-    .text1, .text2 {
+/* SLUT ---------------------------------------*/
+
+/* MEDIA FÖR FACILITETER --------------------------*/
+@media screen and (max-width: 768px) {
+    .faciliteter {
+        margin: auto;
         width: 100%;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .bild-fac {
+        width: 100%;
+        margin: auto;
+
+    }
+    .facilitet1, .facilitet2 {
+        display: flex;
+        flex-direction: column-reverse; /* Gör så att innehållet staplas vertikalt */
+        width: 90%; /* Se till att de tar upp hela bredden */
+        margin: 50px 0; /* Lite marginal för att hålla isär sektionerna */
+        height: auto; /* Anpassar höjden efter innehållet */
+        max-height: fit-content;
+    }
+
+    .facilitet1 .text1, .facilitet2 .text2 {
+        margin: 10px 0 0 0; /* Justera marginaler */
+        background-color: rgba(85, 85, 85, 0.3);
+        border: dotted black;
+        padding: 0.5rem;
+    }
+
+
+    .sidorubrik {
+        float: left;
+        margin: auto;
+        width: 90%;
+        padding: 0%;
      
     }
+    #bild1-fac {
+        margin-top: 100px;
+    }
 }
-
-
-    
+/* SLUT PÅ MEDIA FACILITETER --------------------*/
