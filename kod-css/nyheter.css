@@ -11,7 +11,7 @@ body {
 .header-picture {
   width: 100%;
   height: 30em;
-  background-image: url('golf-1938932_1920.jpg');
+  background-image: url('/bilder/golf-1938932_1920.jpg');
   background-size:cover;
   background-position-y: 70%; 
 }
