@@ -225,7 +225,7 @@ html, body {
 }
 
 .background-div2 {
-    background-image: url("golf-2217600_1280.jpg");
+    background-image: url(/bilder/golf-2217600_1280.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -285,32 +285,95 @@ html, body {
 }
 .banorna {
     margin: 5%;
+    flex-wrap: wrap;
+    background-color: rgb(128, 128, 128, 0.3);
 }
 
 .banan1, .banan2, .banan3 {
     width: 100%;
-    height: 200px;
+    height: 20%;
     display: flex;
     flex-direction: row;
-    background-color: rgb(128, 128, 128, 0.3);
+    margin-bottom: 10%;
 }
 .img-bana {
-    width: 100%;
+    width: 25%;
     height: 100%;
-    margin: 10%;
+    margin: 2%;
     border-radius: 50%;
 }
 
-.images {
-    margin-bottom: 2%;
-}
  .text-bana {
     width: 50%;
     float: right;
     margin-left: 15%;
     line-height: 2rem;
  }
+/* MEDIA FÖR BANORNA ------------------*/
+ @media screen and (max-width:768px) {
 
+    .meny-höger-sida-omoss {
+        font-family: "Josefin Sans";
+        line-height: 25px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        color:#fff;
+        list-style: none;
+        float: left;
+        margin-top: 40%;
+    }
+    
+
+    .link-omoss a{
+        color: rgb(9, 20, 46);
+    }
+
+    .link-omoss a:visited {
+        color: rgb(9, 20, 46);
+    }
+    
+    /* .meny-höger-sida-omoss  */ 
+    .link-omoss a:hover {
+        margin: 2%;
+        text-decoration: none;
+}
+.banorna {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.banan1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 25%;
+}
+.banan2  {
+margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.banan3 {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.banan1 img, .banan2 img, .banan3 img {
+ margin: auto;
+ width: 70%;
+ height: auto;
+}
+
+.text-bana {
+    margin:auto;
+    width: 90%;
+ }
+ }
+ /* MEDIA FÖR BANORNA ------------------*/
 footer {
     background-color:rgba(9, 20, 46, 0.7);
     color: white;
