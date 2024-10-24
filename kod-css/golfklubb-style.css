@@ -311,11 +311,11 @@ footer {
     text-align: center;
     font-family: Arial;
     font-size: 1.5em;
-  }
+}
 
 .tavlingar {
     position: relative;
-    height: 35%;
+    height: 40%;
     overflow: hidden;
 }
 
@@ -323,50 +323,69 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 85%;
+    width: 100%;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
 
-.callout {
-    font-size: 2rem;
+p.callout {
+    font-size: 1.2rem;
     color: rgb(255, 226, 7);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 9);
-    display: block;
-    float: right;
-    align-items: center;
-    flex-direction:row;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    width: 52%;
-    margin-top: 1.5%;
-  }
-
-  .goldencup, .caption1 {
-    position: absolute;
-    display:block;
-    float:right;
-    align-items: center;
-    flex-direction:row;
-    top: 48%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin-top: 2.5em;
+    margin-bottom: 0.5em;
     margin-left: 55%;
-    z-index: 1;
-    clear: both;
-    color: rgb(3, 54, 3);
+    width: 40%;
+    text-align: center;
+    background-color: #042e04c6;
 }
 
-.kalender, .caption2 {
-    position: absolute;
-    display:block;
-    float:right;
-    align-items: center;
-    flex-direction:row;
-    top: 48%;
-    margin-left: 67%;
-    z-index: 1;
-    clear: both;
-    color: rgb(3, 54, 3);
+.goldencup {
+    float: right;
+    margin-right: 10%;
+    padding-bottom: 10%;
+    width: 35%;
+  
+}
+
+@media only screen and (max-width: 1024px)  {
+
+    .goldencup {
+        margin-right: 3%;
+        padding-bottom: 10%;
+        width: 50%;
+    
+    }
+}
+
+@media only screen and (max-width: 700px)  {
+
+.goldencup {
+    margin-right: 3%;
+    padding-bottom: 10%;
+    width: 100%;
+
+}
+
+p.callout {
+    width: 100%;
+    margin-left: 2%;
+}
+}
+
+@media only screen and (max-width: 376px){
+    .goldencup {
+        float: right;
+        margin-right: 3%;
+        padding-bottom: 1%;
+        width: 100%;
+}
+    p.callout {
+    width: 100%;
+    margin: 0;
+    margin-top: 15%;
+ 
+}
 }
 /*End of Geneskod: Tävlingar och Evenemang*/
 
@@ -477,9 +496,7 @@ footer {
 }
 
     
-
-
-/* Footer-Upphövsrätt*/
+/* Start - Genes kod Footer-Upphövsrätt*/
 hr.line {
     width: 82%;
     border: 0.0001em ridge rgb(85, 83, 83);
@@ -500,11 +517,12 @@ hr.line {
     text-decoration: none;
 }
 
-
 .footer-container-legal a:hover {
     color: rgb(128, 128, 128);
     text-decoration: none;
-}    
+}
+/* End - Genes kod Footer-Upphövsrätt*/
+
 
 @media (max-width: 768px) {
     .footer-container {
