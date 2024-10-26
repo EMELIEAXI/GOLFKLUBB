@@ -297,6 +297,63 @@ p {
 .menu li:hover .dropdown-spela {
     display: block;
 }
+
+/*Hamburgermeny*/
+
+.hamburger-menu {
+    display: none;
+    position: relative;
+    z-index: 1001; 
+}
+.menu-toggle {
+    display: none;
+}
+
+.hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    background-color: rgba(9, 20, 46, 0.7);
+    border: none;
+    display: block;
+}
+
+/* Dropdown-listan för hamburgermenyn */
+.hamburger-dropdown {
+    display: none;
+    background-color: rgba(9, 20, 46, 0.9);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
+
+.hamburger-dropdown li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+.hamburger-dropdown li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.hamburger-dropdown li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
 /*Här slutar Adinas kod*/
 
 footer {
@@ -855,4 +912,8 @@ hr.line {
 
 }
 
+<<<<<<< Updated upstream
 /*ADINA slut*/
+=======
+/*ADINA slut*/
+>>>>>>> Stashed changes
