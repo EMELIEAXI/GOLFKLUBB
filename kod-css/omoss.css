@@ -249,11 +249,11 @@ body {
     }
      
     .footer-logo img {
-        width: 150px;
+        width: 100%;
     }
      
     .footer-hours, .footer-links, .footer-social {
-        max-width: 200px;
+        
         text-align: left;
     }
      
