@@ -430,3 +430,118 @@ hr.line {
       width: 100%;
   }
 }
+
+/* === Brytpunkt för 1024px === */
+@media (max-width: 1024px) {
+  .contact-container {
+      flex-direction: column;
+      padding: 20px 10px;
+  }
+
+  .top-nav {
+      padding: 0.5em;
+  }
+
+  .menu li {
+      margin: 0 1.5em;
+  }
+
+  .header-image img {
+      max-height: 250px;
+  }
+
+  .footer-container {
+      gap: 40px;
+      padding: 20px;
+  }
+
+  .footer-logo img {
+      width: 300px;
+  }
+
+  .footer-container-legal {
+      gap: 20%;
+  }
+}
+
+/* === Brytpunkt för 768px === */
+@media (max-width: 768px) {
+  .menu {
+      flex-direction: column;
+      padding: 10px 0;
+  }
+
+  .menu li {
+      margin: 0.5em 0;
+  }
+
+  .header-image img {
+      max-height: 200px;
+  }
+
+  .contact-container {
+      padding: 15px;
+  }
+
+  .contact-form .message-box {
+      width: 100%;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+  }
+
+  .footer-logo img {
+      width: 250px;
+  }
+
+  .footer-social img {
+      width: 30px;
+  }
+}
+
+/* === Brytpunkt för 480px === */
+@media (max-width: 480px) {
+  .top-nav {
+      flex-direction: column;
+      padding: 10px;
+      text-align: center;
+  }
+
+  .menu {
+      flex-direction: column;
+  }
+
+  .menu li {
+      margin: 0.3em 0;
+  }
+
+  .contact-container {
+      padding: 10px;
+      flex-direction: column;
+  }
+
+  .header-image img {
+      max-height: 150px;
+  }
+
+  .footer-container {
+      gap: 10px;
+      padding: 10px;
+  }
+
+  .footer-logo img {
+      width: 200px;
+  }
+
+  .footer-hours, .footer-links, .footer-social {
+      max-width: 100%;
+  }
+
+  .footer-social img {
+      width: 25px;
+  }
+}
+
