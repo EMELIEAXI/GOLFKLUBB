@@ -133,40 +133,6 @@ header nav a:hover {
     font-size: 1.8em;
   }
 
-  .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.9em;
-  }
-  
-  .contact-card, .address-card {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 20px);
-    color: #333;
-  }
-  
-  .contact-card h3, .address-card h3 {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-    color: #005f00;
-  }
-  
-  .contact-card p, .address-card p {
-    font-size: 1em;
-    line-height: 1.6;
-  }
-  
-  .contact-card a, .address-card a {
-    color: #87CEFA;
-    text-decoration: underline;
-  }
   
 span a{
   color: rgb(139, 106, 139);
@@ -193,48 +159,35 @@ span a:hover {
   background-color: #007000;
 }
 
-footer {
-  color: white;
-  text-align: center;
-  padding: 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  background-color: black !important;
- 
-}
-
-footer p {
-  margin: 0;
-  font-size: 0.9em;
-}
-
-
 .betalning {
-    margin: 0;
-    padding: 20px;
-    text-align: center;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
 
 }
 .shop-footer {
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
 .betalning ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 .betalning ul li {
-    display: inline-block;
-    margin: 0 15px;
+  display: inline-block;
+  margin: 0 15px;
 }
 .betalning ul li img {
-    width: 60px; 
-    height: 40px; 
-    object-fit: contain; 
-    
+  width: 60px; 
+  height: 40px; 
+  object-fit: contain; 
+  
+}
+
+.shop-footer {
+  background-color: black;
 }
 
  
