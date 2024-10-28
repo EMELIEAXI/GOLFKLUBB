@@ -566,7 +566,7 @@ hr.line {
 .footer-container-legal {
     display: flex;
     flex-direction: row;
-    justify-content: space around;
+    justify-content: space-around;
     align-items: center;
     font-family: Arial, sans-serif;
     font-size: 0.5em;
