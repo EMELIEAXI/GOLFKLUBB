@@ -158,35 +158,49 @@ span a:hover {
   background-color: #007000;
 }
 
-.betalning {
-  margin: 0;
-  padding: 20px;
+footer {
+  color: white;
   text-align: center;
+  padding: 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: black !important;
+  font-size: 0.8em;
+ 
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+
+.betalning {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 
 }
 .shop-footer {
-  background-color: gray;
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
 }
 .betalning ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 .betalning ul li {
-  display: inline-block;
-  margin: 0 15px;
+    display: inline-block;
+    margin: 0 15px;
 }
 .betalning ul li img {
-  width: 60px; 
-  height: 40px; 
-  object-fit: contain; 
-  
-}
-
-.shop-footer {
-  background-color: black;
+    width: 60px; 
+    height: 40px; 
+    object-fit: contain; 
+    
 }
 
  
