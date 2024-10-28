@@ -555,7 +555,8 @@ footer {
 .footer-social a:hover img {
     opacity: 0.8;
 }
- 
+
+/*Start of Geneskod: Copyright*/
 hr.line {
     width: 90%;
     border: 0.5px solid #555;
@@ -568,7 +569,7 @@ hr.line {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.5em;
     margin-top: 20px;
 }
  
@@ -580,7 +581,8 @@ hr.line {
 .footer-container-legal a:hover {
     color: rgb(128, 128, 128);
 }
- 
+/*End of Geneskod: Copyright*/
+
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
