@@ -231,29 +231,6 @@ p {
     text-decoration: none;
 }
 
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(9, 20, 46, 0.7);
-    list-style-type: none;
-    padding: 10px 0 0;
-    margin: 0;
-    width: 200px;
-}
-
-.dropdown li {
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-
-.dropdown li a {
-    padding: 10px;
-    text-align: left;
-    color: white;
-    text-decoration: none;
-}
 
 .dropdown li a:hover {
     background-color: rgba(9, 20, 46, 0.7);
@@ -293,7 +270,36 @@ p {
     display: block;
 }
 
-/* Spela dropdown */
+/*Spela dropdown*/
+.dropdown-spela {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(9, 20, 46, 0.7);
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    width: 200px;
+}
+
+.dropdown-spela li {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.dropdown-spela li a {
+    padding: 10px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-spela li a:hover {
+    background-color: rgba(9, 20, 46, 0.7);
+}
+
+
 .menu li:hover .dropdown-spela {
     display: block;
 }
@@ -777,7 +783,12 @@ hr.line {
         width: 100%;
     }
 
+
       /*Submeny*/
+
+      .hamburger-dropdown .dropdown-spela {
+        width: 250px; 
+    }
 
     .hamburger-dropdown .dropdown li,
     .dropdown-spela li,
@@ -858,8 +869,26 @@ hr.line {
 
 }
 
-<<<<<<< Updated upstream
-/*ADINA slut*/
-=======
-/*ADINA slut*/
->>>>>>> Stashed changes
+    @media only screen and (min-width: 769px) and (max-width: 1300px) {
+        .top-nav {
+            padding: 0.5em;
+        }
+    
+        .menu li {
+            margin: 0 0.5em; 
+        }
+    
+        .menu li a {
+            font-size: 0.85em; 
+            padding: 8px 12px; 
+        }
+    
+        .top-nav .menu {
+            flex-wrap: wrap; 
+        }
+    }
+    
+
+
+
+
