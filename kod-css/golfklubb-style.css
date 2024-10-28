@@ -783,7 +783,12 @@ hr.line {
         width: 100%;
     }
 
+
       /*Submeny*/
+
+      .hamburger-dropdown .dropdown-spela {
+        width: 250px; 
+    }
 
     .hamburger-dropdown .dropdown li,
     .dropdown-spela li,
