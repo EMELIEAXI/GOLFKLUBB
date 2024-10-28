@@ -24,6 +24,7 @@ body {
   background-color: #1c386f;
   text-align: center;
   color: rgb(255, 255, 255);
+  font-family: Arial;
 }
 
 /*navigering*/
@@ -86,13 +87,14 @@ h1 {
   flex: 30%;
   background-color: #739ccedc;
   margin-right: 1em;
+  padding-top: 3%;
 }
 
 .item_image img {
-  min-width: 100px;
-  min-height: 100px;
-  max-width: 100px;
-  max-height: 100px;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .item_info {
@@ -127,13 +129,6 @@ h1 {
 .erbjud {
   color: rgb(255, 0, 0);
 }
-
-/*.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}*/
-
 
 
 /*side förmular*/
@@ -403,6 +398,5 @@ footer {
    footer {
     width: 100%;
   }
-  
 }
 
