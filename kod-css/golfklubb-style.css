@@ -565,8 +565,8 @@ hr.line {
  
 .footer-container-legal {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space around;
     align-items: center;
     font-family: Arial, sans-serif;
     font-size: 0.5em;
@@ -597,10 +597,18 @@ hr.line {
         text-align: center;
         max-width: 100%;
     }
- 
+    
+     /*Start of Geneskod: @media Copyright*/
+    .footer-container-legal {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
     hr.line {
         width: 100%;
     }
+    /*End of Geneskod: @media Copyright*/
 }
 /* Emilias CSS kod för nyhetssidan */
 
