@@ -22,7 +22,7 @@
     <!--Navigation-->
 
     <div class="navbar">
-        <a href="/kod-html/index.html">Hem</a>
+        <a href="/kod-html/shop-index.html">Hem</a>
         <a href="#golfklubbor">Golfklubbor</a>
         <a href="#bollar">Bollar</a>
         <a href="#golfkläder">Golfkläder</a>
@@ -511,7 +511,7 @@
                 <a href="#toppen">tillbaka till toppen</a>
             </div>
             <hr>
-            <h2>Tillbehör</h2>
+            <h2 id="tillbehör">Tillbehör</h2>
             <div class="item">
                 <div class="item_image">
                     <figure>
@@ -560,7 +560,7 @@
                         <li>Förbättrad grepp och komfort, olika storlekar och material.</li>
                     </ul>
 
-                    <p class="text_right">Pris: 300kr </p>
+                    <p class="text_right">Pris: <del>299kr</del><ins class="erbjud">199kr</ins></p>
                     
                     <div class="form">
                     <form action="/action_page.php">
@@ -980,9 +980,18 @@
         </div>
     </div>
 
-    <div class="footer">
-        <h2>Footer</h2>
-    </div>
+    <footer class="shop-footer">
+        <div class="betalning">
+            <h2>Betalningsmetoder</h2>
+            <ul>
+                <li><img src="Mastercard.svg" alt="Mastercard" ></li>
+                <li><img src="PayPal__1_.svg" alt="PayPal"></li>
+                <li><img src="swish-logo.svg" alt="Swish"></li>
+                <li><img src="Visa.svg" alt="Visa"></li>
+            </ul>
+        </div>
+    </footer>
+    
 </body>
 
 </html>
