@@ -615,16 +615,16 @@ hr.line {
 .section-button {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 3%;
 }
 
-.member-button {
-  margin: 0;
+.three-buttons {
+  margin: 0 4rem;
+  display: flex;
+  justify-content:space-evenly;
 }
 
-.member-button .button {
+.three-buttons .button {
     background-color:#006400;
     color: white;
     font-size: 1em;
@@ -633,13 +633,12 @@ hr.line {
     border-radius: 4px;
     box-shadow: 5px 5px 7px #adb2b9, -5px -5px 7px white;
     cursor: pointer;
-    width: 100%;
+    width: 10rem;
     padding: 0.5em;
-    display: inline-block;
     text-align: center;
 }
 
-.member-button .button:hover {
+.three-buttons .button:hover {
   background-color: #004d00;
   box-shadow: none;
 }
@@ -694,128 +693,63 @@ hr.line {
   .picture-boxes figure {
     flex: 1 1 100%;
   }
+
+  .three-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: 30%;
+  }
+
+  .button {
+    margin: 0.5rem 0 0.5rem 0;
+}
+}
+
+@media (max-width: 500px) {
+    .picture-boxes a img {
+        margin: 1rem 0;
+        width: 250px;
+        height: 200px;
+    }
+
+    .figure img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .picture-boxes figure {
+        margin: 2rem 0;
+        padding: 0;
+        max-width: 250px;
+    }
+
+    .three-buttons {
+        margin: 0;
+        padding: 0;
+    }
+
+    .button {
+        margin: 0.5rem 0 0.5rem 0;
+        margin-inline: 30%;
+    }
+
+    .newssite {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .newsletter-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .newsletter-container input[type="email"] {
+        padding: 10px 0;
+
+    }
 }
 
 /*Här slutar Emilias kod för nyhetssidan*/
-
-/* Emelies css */
-/*Bakgrund på "Om Oss" */
-.background-div {
-    background-image: url("golf-2217600_1280.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-  }
-/* Text rutan på om oss*/
-  .text-container {
-    height: 400px;
-    width: 1000px;
-    color: black;   
-    font-size: 15px;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    background-image: linear-gradient(to right, rgb(255,255,255,1 ), rgb(255, 255, 255,0));
-  }
-/* Bilden som rör sig om man ska logga in/Bli medlem */
-#bild-bli-medlem {
-    width: 300px;
-    height: 300px;
-    box-shadow: none;
-    margin: 300px 200px 100px 0;
-    display: flex;
-    float: right;
-    display: inline;
-    animation: fadein0 2s; 
-}
-@keyframes fadein0 {
-    from {
-        margin: 100px 200px;
-    }
-    to {
-        margin: 300px 200px 0 0;
-    }
-}
-/* "Medlemsförmåner" */
-.text-medlem {
-   text-align: left;
-    float: left;
-    margin: 50px 50px;
-    display: inline-block;
-}
-/* Bilden som rör sig när man är inne på bli medlem*/
-#bild-bli-medlem2 {
-    width: 300px;
-    height: 300px;
-    box-shadow: none;
-    margin: 100px 200px 100px 200px;
-    display: flex;
-    float: right;
-    display: inline;
-    animation: fadein1 2s; 
-}
-@keyframes fadein1 {
-    from {
-        margin: 350px 200px;
-    }
-    to {
-        margin: 100px 200px 0 0;
-    }
-}
-/* Runda bilden som fadear fram */
-#bakgrundbokning {
-    border-radius: 50%;
-    width: 500px;   
-    margin: 100px;
-    display: flex;
-    float: right;
-    animation: fadein 2s;
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-/* .background-medlem {
-    background-image: url("golf-hotel-4538057_1280.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%; } */
-
-/* Bakgrunds bild på Bokning och Kontakt */
-.background-kontaktobokning {
-    background-image: url("golf-hotel-4538057_1280.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-color: dodgerblue;
-    opacity: 0.3;
-}
-/* Bakgrundsbild på Bli medlem */
-  .background-div-medlem {
-    background-image: url("Namnlös17.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-  }
-
-/* Slut Emelies css kod för design*/
 
 /*ADINA - Visa hamburgermenyn och dölj den horisontella menyn i mobilvy */
 @media (max-width: 768px) {
