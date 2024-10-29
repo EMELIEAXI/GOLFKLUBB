@@ -262,10 +262,16 @@ body, html {
   flex: 1;
 }
 
-/* Adjust the map container width */
+/* Adjust the map container width and height */
 .map-container {
   margin: 20px 0;
   max-width: 100%; /* Ensure responsiveness */
+  height: 400px; /* Sätt en standardhöjd för större skärmar */
+}
+
+.map-container iframe {
+  width: 100%; /* Tar upp hela bredden av sin container */
+  height: 100%; /* Tar upp hela höjden av sin container */
 }
 
 h1, h2 {
@@ -479,6 +485,16 @@ hr.line {
       max-height: 200px;
   }
 
+  .map-container {
+    width: 100%;
+    height: auto; /* Låt höjden justeras automatiskt */
+    max-width: 90%; /* Justera för att minska kartan */
+  }
+  
+  .map-info {
+    width: 100%;
+    max-width: 90%;
+  }
   .contact-container {
       padding: 15px;
   }
@@ -517,6 +533,11 @@ hr.line {
   .menu li {
       margin: 0.3em 0;
   }
+  .map-container {
+    width: 100%;
+    max-width: 80%;
+    height: auto; /* Låt höjden justeras automatiskt */
+  }
 
   .contact-container {
       padding: 10px;
@@ -544,4 +565,3 @@ hr.line {
       width: 25px;
   }
 }
-
