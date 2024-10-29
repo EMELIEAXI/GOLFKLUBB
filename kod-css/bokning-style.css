@@ -316,8 +316,9 @@ body {
     max-width: 80%;
     text-align: center;
     padding: 2rem;
-    margin-top: 3rem;
-    border-radius: 10px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 30px;
     font-size: 2rem;
 }
 
@@ -375,8 +376,9 @@ body {
     width: 50%;
     max-width: 50%;
     max-height: 570px;
-    padding: 1rem;
     object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
 }
 
 .horizontal-line {
@@ -428,6 +430,8 @@ body {
     height: auto;
     max-height: 480px;
     object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
 }
 
 .conference {
@@ -492,6 +496,8 @@ body {
     height: auto;
     padding: 1rem;
     object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 30px;
 }
 
 .conference-contact {
@@ -529,7 +535,7 @@ body {
     }
 
     .guest-header img {
-        padding-top: 5.3rem;
+        padding-top: 3rem;
     }
 
     .map iframe {
@@ -610,7 +616,7 @@ body {
 
 @media (max-width: 1024px) {
     .greenfee-header img {
-       padding-top: 5.3rem; 
+       padding-top: 3rem; 
     }
 
     .container-rules {
@@ -700,7 +706,7 @@ body {
 
 @media (max-width: 1024px) {
     .business-header {
-        padding-top: 5.3rem;
+        padding-top: 3rem;
     }
 
     .business-price, .contest, .conference-info {
@@ -708,8 +714,8 @@ body {
     }
     
     .price-img, .contest-img, .conference-img {
-        width: 100%;
-        max-width: 100%;
+        width: 80%;
+        max-width: 80%;
         height: auto;
         padding: 1rem 0;
     }
