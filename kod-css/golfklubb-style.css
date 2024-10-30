@@ -56,9 +56,9 @@ a:active {
     text-decoration: none;
     color: rgb(191, 191, 191);
 }
-p {
+/*p {
     font-size: 1.5em;
-}
+}*/
 
 /*Adinas kod*/
 
@@ -500,6 +500,7 @@ footer {
     color: white;
     padding: 40px 20px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
  
 .footer-container {
@@ -567,8 +568,7 @@ hr.line {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-family: Arial, sans-serif;
-    font-size: 0.5em;
+    font-size: 0.8em;
     margin-top: 20px;
 }
  
