@@ -123,7 +123,22 @@ h2.copy {
 
 
 
+.ollink li a, .h4link a {
+  color:  rgb(12, 67, 220);
+  text-decoration: none;
+  padding: 0.5em;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
 
+/*
+.ollink li:hover > a::after {
+  display: inline;
+}*/
+
+.ollink li a:hover, .h4link a:hover  {
+  color: rgb(58, 105, 234);
+}
 
 /******************** Responsive ******************/
 /******************** < 1024px ********************/
