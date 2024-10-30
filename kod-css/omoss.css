@@ -128,9 +128,9 @@ body, html {
 }
 
 .faciliteter {
-    padding: 20px;
+    /* padding: 20px; */
     /* overflow-y: auto; */
-    align-items: center;
+    /* align-items: center; */
     /* height: 100vh; */
     margin-top: 2%;
     margin-bottom: 0;
@@ -253,3 +253,8 @@ body, html {
     }
 }
 /* SLUT PÅ MEDIA FACILITETER --------------------*/
+
+#facili {
+    /* background-color: rgba(9, 20, 46); */
+    background-color: rgb(75, 82, 95);
+}
