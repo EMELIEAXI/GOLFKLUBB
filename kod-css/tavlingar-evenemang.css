@@ -64,7 +64,7 @@ h4 {
   margin-top: 2em;
   margin-bottom: 0.2em;
   color: #1c386f;
-  text-shadow: 2px 2px 4px rgb(255, 255, 255, 8);
+  text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
 
 p.pinfo {
@@ -500,8 +500,8 @@ select {
   border: solid white;
   border-width: 0 3px 3px 0;
 
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
+  /*-webkit-transform: rotate(45deg);*/
+  /*-ms-transform: rotate(45deg);*/
   transform: rotate(45deg);
 }
 
