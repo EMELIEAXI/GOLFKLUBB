@@ -137,6 +137,52 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #218838;
 }
+/*ÖPPETTIDER RESTAURANGEN*/
+.openinghours-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: fit-content;
+}
+
+.opening-hours {
+    background-color: #28a745;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    width:20rem;
+    padding: 2rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+    text-wrap: wrap;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.opening-hours p {
+    padding: 0.5rem;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
+}
+
+.opening-hours h2 {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 500px) {
+    .openinghours-wrapper {
+    display: flex;
+    flex: 1 1 50%;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+    }
+
+    .opening-hours {
+        width: fit-content;
+    }
+}
 
 /* RESTAURANGMENYN AV EMILIA */
 body {

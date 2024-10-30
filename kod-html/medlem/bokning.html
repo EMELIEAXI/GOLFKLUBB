@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="se-SV">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om oss</title>
-    <link rel="stylesheet" href="/kod-css/omoss.css">
+    <title>Medlem - Bokning</title>
+    <link rel="stylesheet" href="/kod-css/medlem.css">
+    <link rel="stylesheet" href="/kod-css/medlem-bokning.css">
     <link rel="stylesheet" href="/kod-css/golfklubb-style.css">
 </head>
 <body>
+
    <!-- Adinas nav del -->
 
 
@@ -91,35 +93,122 @@
         </div>
     </div>
    <!-- Adinas nav del slut -->
-    <div class="background-div-omoss">
-        <div class="under-header">
-            <ul class="meny-höger-sida-omoss">
-        <li class="link-omoss"><a href="/kod-html/omoss/visiontest2.html">VÅR VISION OCH HISTORIA</a></li>
-        <li class="link-omoss"><a href="/kod-html/omoss/banorna.html">BANORNA</a></li>
-        <li class="link-omoss"><a href="/kod-html/omoss/faciliteter.html">FACILITETER</a></li>
-    </ul>
-</div>
-        <div class="text-container-omoss"> 
-<p class="omoss">
-    <strong>Välkommen till TUC Golfklubb, en naturskön oas för golfälskare!</strong> <br><br>
-Sedan starten 2004 har vi strävat efter att erbjuda en förstklassig upplevelse för både nybörjare<br> och erfarna spelare. <br>
-Vår vackra 18-hålsbana är omgiven av böljande landskap och utmanande terräng<br>
-som ger både nöje och utmaning för alla nivåer.<br>
-<br>
-Hos oss är din bekvämlighet i fokus. Vi erbjuder gott om parkeringsmöjligheter,<br>
-inklusive platser för husbilar, så att du kan njuta av din vistelse utan stress.<br><br>
-Våra moderna <a href="/kod-html/omoss/faciliteter.html">faciliteter</a> inkluderar rymliga omklädningsrum, duschar och en <a href="/kod-html/restaurang.html">restaurang</a> där du kan njuta av en god måltid efter rundan. <br>
-För dig som vill förlänga vistelsen erbjuder vi även <a href="/kod-html/omoss/faciliteter.html">övernattningsmöjligheter</a> i våra bekväma stugor.<br>
-<br>
-Som <a href="/kod-html/medlem/medlem.html"> medlem </a> i TUC Golfklubb får du tillgång till exklusiva förmåner, som rabatterade greenfee, förtur till <a href="/kod-html/medlem/bokning.html">bokning</a> av starttider och inbjudningar till klubbens <a href="/kod-html/spela-golf/tavlingar-evenemang/tavlingar-evenemang.html">tävlingar</a> och sociala evenemang. <br>
-Vår vänliga personal och engagerade medlemmar ser till att du alltid känner dig välkommen, oavsett om du besöker oss för en dag eller är här året om.<br>
-<br>
 
-Välkommen till TUC Golfklubb där golf, gemenskap och naturupplevelser möts!    
-</p>
-        </div>
+    <header>
+        <img src="/bilder/medlem-bokning-header.jpg" class="header-medlem">
+    </header>
 
+    <div class="container-form-aside">
+    <section class="booking-form">
+        <h2>Boka din golfrunda här!</h2>
+        <form class="booking-info">
+            <label for="players">Antal spelare:</label>
+            <select id="players" name="players">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+            </select> <br> <br>
+            <label for="date">Datum:</label>
+            <input type="date" name="when" id="date">
+        </form>
+        <h4>Bokningsinformation</h4>
+        <ul class="opening-hours">
+            <li>Öppettider:</li>
+            <li>Måndag - fredag 09:00 - 18:00</li>
+            <li>Helger 10:00 - 18:00</li>
+        </ul>
+        <p>Ni når oss på telefon +46 123 456 789 och <a href="#">info@golfklubb.se</a></p>
+        <p>Det krävs att du är inloggad för att boka.</p>
+        <input type="button" class="button-book" value="Boka">
+    </section>
+
+    <aside class="aside-info">
+        <a href="/kod-html/medlem/createnewmember.html" class="aside-button">Bli medlem</a>
+        <a href="/kod-html/Omoss/nyheter.html" class="aside-button">Nyheter</a>
+        <a href="/kod-html/bokning/greenfee-regler.html" class="aside-button">Regler</a>
+        <a href="/kod-html/bokning/greenfee-regler.html" class="aside-button">Greenfee</a>
+        <a href="/kod-html/Omoss/faciliteter.html" class="aside-button">Faciliteter</a>
+        <a href="/kod-html/Omoss/banorna.html" class="aside-button">Våra banor</a>
+    </aside>
     </div>
+
+
+    <h2 class="table-title">Lediga golftider</h2>
+
+    <section class="booking-table">
+        <table class="booking-calendar">
+            <thead>
+                <tr>
+                    <th>Datum</th>
+                    <th>Tid</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="available">
+                    <td>2024-10-18</td>
+                    <td>10:00</td>
+                    <td>Ledig</td>
+                </tr>
+                <tr class="available">
+                    <td>2024-10-18</td>
+                    <td>12:00</td>
+                    <td>Ledig</td>
+                </tr>
+                <tr class="occupied">
+                    <td>2024-10-18</td>
+                    <td>14:00</td>
+                    <td>Upptagen</td>
+                </tr>
+                <tr class="available">
+                    <td>2024-10-18</td>
+                    <td>16:00</td>
+                    <td>Ledig</td>
+                </tr>
+                <tr class="occupied">
+                    <td>2024-10-19</td>
+                    <td>10:00</td>
+                    <td>Upptagen</td>
+                </tr>
+                <tr class="occupied">
+                    <td>2024-10-19</td>
+                    <td>12:00</td>
+                    <td>Upptagen</td>
+                </tr>
+                <tr class="available">
+                    <td>2024-10-19</td>
+                    <td>14:00</td>
+                    <td>Ledig</td>
+                </tr>
+                <tr class="occupied">
+                    <td>2024-10-19</td>
+                    <td>16:00</td>
+                    <td>Upptagen</td>
+                </tr>
+                <tr class="available">
+                    <td>2024-10-20</td>
+                    <td>10:00</td>
+                    <td>Ledig</td>
+                </tr>
+                <tr class="available">
+                    <td>2024-10-20</td>
+                    <td>12:00</td>
+                    <td>Ledig</td>
+                </tr>
+                <tr class="occupied">
+                    <td>2024-10-20</td>
+                    <td>14:00</td>
+                    <td>Upptagen</td>
+                </tr>
+                <tr class="available">
+                    <td>2024-10-20</td>
+                    <td>16:00</td>
+                    <td>Ledig</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
     <footer>
         <div class="footer-container">
@@ -154,8 +243,9 @@ Välkommen till TUC Golfklubb där golf, gemenskap och naturupplevelser möts!
                 </a>
             </div>
         </div>
-        <!--Start of Geneskod Upphövsrätt-->
+
         <hr class="line">
+
         <div class="footer-container-legal">
             <div class="footer-cookies">
                 <p><a href="/kod-html/legal/legal.html">Kakor</a> &VerticalLine;
@@ -166,7 +256,6 @@ Välkommen till TUC Golfklubb där golf, gemenskap och naturupplevelser möts!
                 <p><a href="/kod-html/legal/legal.html">Copyright &copy; 2004-2024</a></p>
             </div>
         </div>
-        <!--End of Geneskod Upphövsrätt-->
     </footer>
 </body>
 </html>

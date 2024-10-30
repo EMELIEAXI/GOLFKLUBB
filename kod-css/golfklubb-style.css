@@ -365,8 +365,8 @@ p {
 /*Start of Geneskod: Tävlingar och Evenemang*/
 .tav {
     text-align: center;
-    font-family: Arial;
-    font-size: 1.5em;
+    font-family: 'Times New Roman';
+    font-size: 1.4em;
 }
 
 .tavlingar {
@@ -887,8 +887,31 @@ hr.line {
             flex-wrap: wrap; 
         }
     }
+
+   /* Välkommen media */
     
+@media (max-width: 1024px) {
+    .video-container {
+        max-height: 800px;
+    }
 
+    .title-content {
+        padding-top: 300px;
+    }
+}
 
+@media (max-width: 590px) {
+    .title-content {
+        padding-top: 300px;
+    }
 
+    .title-content .title {
+        font-size: 3em;
+    }
 
+    .title-content .info {
+        font-size: 1em;
+    }
+}
+
+   /* Välkommen media slut */
