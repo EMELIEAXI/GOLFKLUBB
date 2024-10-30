@@ -69,6 +69,7 @@ html, body {
     margin: 5%;
     flex-wrap: wrap;
     background-color: rgb(128, 128, 128, 0.3);
+    font-size: small;
 }
 
 .banan1, .banan2, .banan3 {
