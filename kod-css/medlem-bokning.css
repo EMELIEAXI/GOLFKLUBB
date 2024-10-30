@@ -72,7 +72,6 @@ body {
 
 .booking-form p {
     font-size: 1rem;
-    padding-bottom: 1.5rm;
 }
 
 .booking-form p:nth-of-type(2) {
@@ -133,23 +132,18 @@ body {
     font-size: 1rem;
 }
 
-.table-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    font-family: "Roboto";
-}
-
 .booking-table {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 3rem 6rem 6rem 6rem;
-    font-family: "Roboto";
-    border: 1px solid #000;
-    border-top: none;
+    margin: 1rem 6rem 6rem 6rem;
+
+}
+
+.table-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 table {
