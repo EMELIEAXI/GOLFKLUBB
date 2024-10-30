@@ -291,7 +291,6 @@ h1, h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -521,7 +520,6 @@ hr.line {
 /* === Brytpunkt för 480px === */
 @media (max-width: 480px) {
   .top-nav {
-      flex-direction: column;
       padding: 10px;
       text-align: center;
   }
@@ -533,15 +531,17 @@ hr.line {
   .menu li {
       margin: 0.3em 0;
   }
+
   .map-container {
     width: 100%;
     max-width: 80%;
     height: auto; /* Låt höjden justeras automatiskt */
+    text-align: center;
   }
 
   .contact-container {
       padding: 10px;
-      flex-direction: column;
+      text-align: center;
   }
 
   .header-image img {
