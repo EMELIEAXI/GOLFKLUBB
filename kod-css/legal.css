@@ -39,7 +39,7 @@ h2.rubrik {
   text-align: left;
   margin-top: 10%;
   color: #1c386f;
-  text-shadow: 2px 2px 4px rgb(255, 255, 255, 8);
+  text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
 
 h2 {
@@ -93,7 +93,7 @@ h2.copy {
   text-align: center;
   margin-top: 5%;
   color: #1c386f;
-  text-shadow: 2px 2px 4px rgb(255, 255, 255, 8);
+  text-shadow: 2px 2px 4px rgb(255, 255, 255, 1);
 }
 
 
