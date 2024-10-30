@@ -31,9 +31,8 @@ h2.h2head {
   margin-top: 0;
 }
 
-
 .main {
-  padding: 3%;
+  padding: 1%;
 }
 
 h2.rubrik {
@@ -52,16 +51,16 @@ ol, dl {
   font-size: 1.2em;
 }
 
-.note {
-  margin: auto;
-  padding: 0.2em;
-  width: 75%;
-}
 
-.pnote, h4, .rights {
+h4, .rights {
   text-align: center;
   font-size: 1em;
 
+}
+
+
+.pnote {
+  text-align: left;
 }
 
 strong {
@@ -81,6 +80,10 @@ dt {
   padding: 2% 20% 0 20%;
 }
 
+fieldset {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
 label, input {
   font-size: 1.2em;
 }
@@ -88,7 +91,7 @@ label, input {
 
 h2.copy {
   text-align: center;
-  margin-top: 7%;
+  margin-top: 5%;
   color: #1c386f;
   text-shadow: 2px 2px 4px rgb(255, 255, 255, 8);
 }
@@ -105,7 +108,7 @@ h2.copy {
   height: auto;
   width: 100%;
   margin-top: 5%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .cookies .c-image {
@@ -113,8 +116,8 @@ h2.copy {
   height: auto;
   width: 70%;
   margin-left: 30%;
-  margin-top: 5%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-top: 8%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 
